@@ -1,0 +1,292 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "desc" : "Folder Save and Save & Copy write the photo into. Default `~\/Downloads`.",
+        "stripped_doc" : [
+          "Folder Save and Save & Copy write the photo into. Default `~\/Downloads`."
+        ],
+        "doc" : "Folder Save and Save & Copy write the photo into. Default `~\/Downloads`.",
+        "def" : "iPhoneSnap.saveDir",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap.saveDir",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "saveDir",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Action Return runs in the preview: \"delete\", \"edit\", \"copy\", \"save\" or",
+        "stripped_doc" : [
+          "Action Return runs in the preview: \"delete\", \"edit\", \"copy\", \"save\" or",
+          "\"saveCopy\". Default \"save\"."
+        ],
+        "doc" : "Action Return runs in the preview: \"delete\", \"edit\", \"copy\", \"save\" or\n\"saveCopy\". Default \"save\".",
+        "def" : "iPhoneSnap.defaultAction",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap.defaultAction",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "defaultAction",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Function run by Edit with the path of a JPEG in the temporary folder.",
+        "stripped_doc" : [
+          "Function run by Edit with the path of a JPEG in the temporary folder.",
+          "Default: open it in the default app for JPEGs."
+        ],
+        "doc" : "Function run by Edit with the path of a JPEG in the temporary folder.\nDefault: open it in the default app for JPEGs.",
+        "def" : "iPhoneSnap.edit",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap.edit",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "edit",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "Take a photo with your iPhone through Continuity Camera, the \"Take Photo\"",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "items" : [
+      {
+        "desc" : "Action Return runs in the preview: \"delete\", \"edit\", \"copy\", \"save\" or",
+        "stripped_doc" : [
+          "Action Return runs in the preview: \"delete\", \"edit\", \"copy\", \"save\" or",
+          "\"saveCopy\". Default \"save\"."
+        ],
+        "doc" : "Action Return runs in the preview: \"delete\", \"edit\", \"copy\", \"save\" or\n\"saveCopy\". Default \"save\".",
+        "def" : "iPhoneSnap.defaultAction",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap.defaultAction",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "defaultAction",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Function run by Edit with the path of a JPEG in the temporary folder.",
+        "stripped_doc" : [
+          "Function run by Edit with the path of a JPEG in the temporary folder.",
+          "Default: open it in the default app for JPEGs."
+        ],
+        "doc" : "Function run by Edit with the path of a JPEG in the temporary folder.\nDefault: open it in the default app for JPEGs.",
+        "def" : "iPhoneSnap.edit",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap.edit",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "edit",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Folder Save and Save & Copy write the photo into. Default `~\/Downloads`.",
+        "stripped_doc" : [
+          "Folder Save and Save & Copy write the photo into. Default `~\/Downloads`."
+        ],
+        "doc" : "Folder Save and Save & Copy write the photo into. Default `~\/Downloads`.",
+        "def" : "iPhoneSnap.saveDir",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap.saveDir",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "saveDir",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Binds hotkeys for iPhoneSnap",
+        "stripped_doc" : [
+          "Binds hotkeys for iPhoneSnap",
+          ""
+        ],
+        "doc" : "Binds hotkeys for iPhoneSnap\n\nParameters:\n * mapping - A table with the key `take` set to a hotkey spec, e.g.\n   `{ take = {{\"shift\"}, \"f13\"} }`\n\nReturns:\n * The iPhoneSnap object",
+        "def" : "iPhoneSnap:bindHotkeys(mapping)",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+          " * The iPhoneSnap object"
+        ],
+        "name" : "bindHotkeys",
+        "parameters" : [
+          " * mapping - A table with the key `take` set to a hotkey spec, e.g.",
+          "   `{ take = {{\"shift\"}, \"f13\"} }`",
+          ""
+        ]
+      },
+      {
+        "desc" : "Locates the bundled helper. Called by hs.loadSpoon(); binds nothing.",
+        "stripped_doc" : [
+          "Locates the bundled helper. Called by hs.loadSpoon(); binds nothing.",
+          ""
+        ],
+        "doc" : "Locates the bundled helper. Called by hs.loadSpoon(); binds nothing.\n\nReturns:\n * The iPhoneSnap object",
+        "def" : "iPhoneSnap:init()",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap:init()",
+        "type" : "Method",
+        "returns" : [
+          " * The iPhoneSnap object"
+        ],
+        "name" : "init",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Opens the macOS \"Take a photo\" prompt on the iPhone, then the preview.",
+        "stripped_doc" : [
+          "Opens the macOS \"Take a photo\" prompt on the iPhone, then the preview.",
+          ""
+        ],
+        "doc" : "Opens the macOS \"Take a photo\" prompt on the iPhone, then the preview.\n\nReturns:\n * The iPhoneSnap object",
+        "def" : "iPhoneSnap:take()",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap:take()",
+        "type" : "Method",
+        "returns" : [
+          " * The iPhoneSnap object"
+        ],
+        "name" : "take",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "Method" : [
+      {
+        "desc" : "Locates the bundled helper. Called by hs.loadSpoon(); binds nothing.",
+        "stripped_doc" : [
+          "Locates the bundled helper. Called by hs.loadSpoon(); binds nothing.",
+          ""
+        ],
+        "doc" : "Locates the bundled helper. Called by hs.loadSpoon(); binds nothing.\n\nReturns:\n * The iPhoneSnap object",
+        "def" : "iPhoneSnap:init()",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap:init()",
+        "type" : "Method",
+        "returns" : [
+          " * The iPhoneSnap object"
+        ],
+        "name" : "init",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Opens the macOS \"Take a photo\" prompt on the iPhone, then the preview.",
+        "stripped_doc" : [
+          "Opens the macOS \"Take a photo\" prompt on the iPhone, then the preview.",
+          ""
+        ],
+        "doc" : "Opens the macOS \"Take a photo\" prompt on the iPhone, then the preview.\n\nReturns:\n * The iPhoneSnap object",
+        "def" : "iPhoneSnap:take()",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap:take()",
+        "type" : "Method",
+        "returns" : [
+          " * The iPhoneSnap object"
+        ],
+        "name" : "take",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "desc" : "Binds hotkeys for iPhoneSnap",
+        "stripped_doc" : [
+          "Binds hotkeys for iPhoneSnap",
+          ""
+        ],
+        "doc" : "Binds hotkeys for iPhoneSnap\n\nParameters:\n * mapping - A table with the key `take` set to a hotkey spec, e.g.\n   `{ take = {{\"shift\"}, \"f13\"} }`\n\nReturns:\n * The iPhoneSnap object",
+        "def" : "iPhoneSnap:bindHotkeys(mapping)",
+        "notes" : [
+
+        ],
+        "signature" : "iPhoneSnap:bindHotkeys(mapping)",
+        "type" : "Method",
+        "returns" : [
+          " * The iPhoneSnap object"
+        ],
+        "name" : "bindHotkeys",
+        "parameters" : [
+          " * mapping - A table with the key `take` set to a hotkey spec, e.g.",
+          "   `{ take = {{\"shift\"}, \"f13\"} }`",
+          ""
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "doc" : "Take a photo with your iPhone through Continuity Camera, the \"Take Photo\"\nFinder offers under Import from iPhone, and copy, save, edit or delete it\nfrom a preview window.\n\nThe work happens in the bundled iphone-snap.swift, compiled with swiftc the\nfirst time it is needed and again whenever it changes.\n\nDownload: https:\/\/github.com\/kamaln7\/iPhoneSnap.spoon",
+    "name" : "iPhoneSnap"
+  }
+]
